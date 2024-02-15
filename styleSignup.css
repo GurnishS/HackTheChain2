@@ -1,0 +1,102 @@
+*{
+    border:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #f12711, #f5af19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#main{
+    width:90%;
+    max-width: 500px;
+    height: 80vh;
+    min-height: 500px;
+    margin-top: 10vh;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Popins-Regular", sans-serif;
+    align-items: center;
+}
+
+#main h1{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    color: #0a0403;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+i{
+    transform: translateY(-1px);
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+
+
+#inputwforgot{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+#inputwforgot a{
+   align-self: flex-end;
+   margin-right: 10px;
+   margin-top: 10px;
+}
+
+.inputwicon{
+    display: inline;
+    background-color: white;
+    border-radius: 10px;
+    padding-left:5px;
+    border-bottom:2px solid #0a0403;
+}
+
+.inputclass{
+    font-size: 1.2em;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#buttonholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5%;
+
+}
+
+.signupbutton{
+    border-radius: 10px;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    width:200px;
+    height: 30px;
+    font-size: 1.3rem;
+    color:white;
+}
+
+.loginbutton{
+    border-radius: 10px;
+    height: 30px;
+    width:150px;
+    font-size: 1rem;
+    color:white;
+    background: linear-gradient(to right top, #878789, #4b5357, #0f1314, #3b5f4d);
+
+}

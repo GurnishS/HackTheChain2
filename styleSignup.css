@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(to right, #f12711, #f5af19);
+    background: linear-gradient(to right,#84ffc9,#aab2ff, #40c9ff, #eca0ff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +91,11 @@ i{
     color:white;
 }
 
+.signupbutton:hover{
+    background: linear-gradient(to right top, #a8eb12, #00bf72, #008793, #004d7a, #051937);
+    cursor: pointer;
+}
+
 .loginbutton{
     border-radius: 10px;
     height: 30px;
@@ -99,4 +104,9 @@ i{
     color:white;
     background: linear-gradient(to right top, #878789, #4b5357, #0f1314, #3b5f4d);
 
+}
+
+.loginbutton:hover{
+    background: linear-gradient(to right top, #3b5f4d, #0f1314, #4b5357, #878789);
+    cursor: pointer;
 }

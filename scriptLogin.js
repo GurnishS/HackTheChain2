@@ -19,3 +19,35 @@ inputElement[1].addEventListener('focus', (event) => {
 inputElement[1].addEventListener('blur', (event) => {
     inputbox[1].style.borderBottom="2px solid #0a0403";
 })
+
+//validation
+
+const loginbutton=document.getElementsByClassName('loginbutton')[0];
+
+loginbutton.addEventListener('click', (event) => {
+    const username=inputElement[0].value;
+    const password=inputElement[1].value;
+    if((username=='' || username.length<8)& inputbox[0].lastChild.className!="fa-solid fa-circle-exclamation"){
+        //alert('Please fill all the fields');
+        const newele = document.createElement("i");
+        newele.className="fa-solid fa-circle-exclamation";
+        newele.style.color = 'red';
+        newele.style.marginRight='10px';
+        inputbox[0].appendChild(newele);
+    }
+    if((password=='' || password.length<8) & inputbox[1].lastChild.className!="fa-solid fa-circle-exclamation"){
+        //alert('Please fill all the fields');
+        const newele = document.createElement("i");
+        newele.className="fa-solid fa-circle-exclamation";
+        newele.style.color='red';
+        newele.style.marginRight='10px';
+        inputbox[1].appendChild(newele);
+    }
+})
+
+loginbutton.addEventListener('blur', (event) => {
+    if(inputbox[0].lastChild.className=="fa-solid fa-circle-exclamation"){
+        inputbox[0].removeChild(inputbox[0].lastChild);}
+    if(inputbox[1].lastChild.className=="fa-solid fa-circle-exclamation"){
+        inputbox[1].removeChild(inputbox[1].lastChild);}
+})

@@ -1,0 +1,115 @@
+*{
+    border:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,#84ffc9,#aab2ff, #40c9ff, #eca0ff);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#main{
+    width:90%;
+    min-width: 300px;
+    height: 80vh;
+    min-height: 500px;
+    background-color: aliceblue;
+    margin-top: 10vh;
+    border-radius: 10px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    font-family: "Popins-Regular", sans-serif;
+    align-items: center;
+}
+
+#main h1{
+    font-family: "Poppins-Bold", sans-serif;
+}
+
+#searchandprofile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 5%;
+}
+
+#searchbar{
+    width: 100%;
+    min-width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#profilepic{
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: white;
+    align-self: center;
+}
+
+#profile{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#searchbox{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding:2px;
+    font-size: 1.2rem;
+}
+
+#menucontainer{
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    margin-bottom: 2%;
+    overflow-y: scroll;
+}
+
+.entry{
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding:5px 10px;
+}
+
+.buttoncontainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.styleremovebutton{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    min-width:100px;
+    min-height: 30px;
+}
+
+.styledownloadbutton{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    min-width:100px;
+    min-height: 30px;
+}

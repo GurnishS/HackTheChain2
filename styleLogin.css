@@ -10,15 +10,14 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Poppins", sans-serif;
-
+    min-height: 100vh;
 }
 
 #main{
-    width:90%;
+    width:90vw;
     max-width: 500px;
-    height: 80vh;
     min-height: 500px;
-    margin-top: 10vh;
+    max-height: 700px;
     background-color: aliceblue;
     border-radius: 10px;
     display: flex;
@@ -80,6 +79,7 @@ i{
     align-items: center;
     width: 100%;
     margin-top:10%;
+    margin-bottom:10%;
 
 }
 

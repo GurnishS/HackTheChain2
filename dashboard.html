@@ -10,13 +10,30 @@
     <body>
         <div id="main">
             <div id="searchandprofile">
-                <div class="search " >
-                    <input type="text" class="searchbar" placeholder="Search">
-                    <button class="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <button class="closebutton"><i class="fa-solid fa-2x fa-left-long"></i></button>
+                <div id="searchbox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchbar" placeholder="Search">
                 </div>
                 <div id="profile">
-                    <img src="profile.png" alt="Profile Picture" id="profilepic">
+                    <img src="profile.png" alt="Profile Picture" id="profilepic" onclick="togglemenu()">
+                    <div class="sub-menu-drop_down" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="userinfo">
+                                <img src="profile.png">
+                                <h2>Gurneesh</h2>
+                            </div>
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <p>Designation</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <p>Number of cases filed:</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <p>Log out</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <h1>Recent Files</h1>
@@ -69,6 +86,7 @@
                         <button class="styledownloadbutton">Download</button>
                     </div>
                 </div>
+
                 <div class="entry">
                     <p>Secret document.docx</p>
                     <div class="buttoncontainer">
@@ -76,10 +94,10 @@
                         <button class="styledownloadbutton">Download</button>
                     </div>
                 </div>
+
                 <!-- end of entries -->
             </div>
         </div>
-        <script src="scriptDashboardsearchbtn.js"></script>
-        <script src="scriptDashscroll.js"></script>
+        <script src="scriptdropdown.js"></script>
     </body>
 </html>

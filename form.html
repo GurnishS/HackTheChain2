@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR Form</title>
+    <link rel="stylesheet" href="styleForm.css">
+</head>
+<body>
+    <div id="main">
+        <h1>FIR Form</h1>
+        <div id="informerdetails" class="outerdetailsbox">
+            <h2>Informer Details</h2>
+            <div class="innerdetailsbox">
+                <div class="detailsbox">
+                    <label for="informername">Name</label>
+                    <div id="fullname">
+                        <input type="text" id="informername" placeholder="First Name" class="inputclass">
+                        <input type="text" id="informerlastname" placeholder="Last Name" class="inputclass">
+                    </div>
+                </div>
+                <div class="detailsbox">
+                    <label for="informerphone">Phone</label>
+                    <input type="text" id="informerphone" placeholder="Phone" class="inputclass">                
+                </div>
+                <div class="detailsbox">
+                    <label for="informeremail">Email</label>
+                    <input type="text" id="informeremail" placeholder="Email" class="inputclass">                
+                </div>
+                <div class="detailsbox">
+                    <label for="informeraddress">Address</label>
+                    <input type="text" id="informeraddress" placeholder="Address" class="inputclass">                
+                </div>
+                <div class="detailsbox">
+                    <label for="informeradhaar">Adhaar Number</label>
+                    <input type="text" id="informeradhaar" placeholder="Adhaar Number" class="inputclass">                
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="checkbox">
+            <input type="checkbox" id="suspectcheck" class="inputclass">
+            <label for="suspectcheck">Do you have a suspect</label>
+        </div>
+
+        <div id="suspectdetails" class="outerdetailsbox">
+            <h2>Suspect Details</h2>
+            <div class="innerdetailsbox">
+                <div class="detailsbox">
+                    <label for="suspectname">Name</label>
+                    <div id="fullname">
+                        <input type="text" id="suspectname" placeholder="First Name" class="inputclass">
+                        <input type="text" id="suspectlastname" placeholder="Last Name" class="inputclass">
+                    </div>
+                </div>
+                <div class="detailsbox">
+                    <label for="suspectaddress">Address</label>
+                    <input type="text" id="suspectaddress" placeholder="Address" class="inputclass">                
+                </div>
+                <div class="detailsbox">
+                    <label for="suspectothers">Others</label>
+                    <input type="text" id="suspectothers" placeholder="Eg. Phone, Desciption etc" class="inputclass">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptForm.js"></script>
+</body>
+</html>

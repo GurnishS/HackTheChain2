@@ -31,6 +31,7 @@ body{
 
 #main h1{
     font-family: "Poppins-Bold", sans-serif;
+    margin:0;
 }
 
 #searchandprofile{
@@ -91,14 +92,42 @@ body{
     padding:5px 10px;
 }
 
+#newandrecent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:20px 0;
+}
+
+
+
+#newfirbutton{
+    background-color:green;
+    color: white;
+    position: absolute;
+    left: 14vw;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+#newfirbutton:hover{
+    background-color: #27762a;
+}
+
+#newfirbutton:active{
+    background-color: #308c36;
+}
+
 .buttoncontainer{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.styleremovebutton{
-    background-color: red;
+.styledetailsbutton{
+    background-color: rgb(45, 39, 39);
     color: white;
     border: none;
     border-radius: 20px;

@@ -41,13 +41,15 @@ body{
     margin-top: 5%;
 }
 
-#searchbar{
-    width: 100%;
-    min-width: 200px;
+.searchbar{
+    width: 0px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 30px;
+    padding:4px;
+    font-size: 1.2rem;
     border: none;
     outline: none;
+    transition: width 0.25 smooth;
 }
 
 #profilepic{
@@ -56,6 +58,7 @@ body{
     border-radius: 50%;
     background-color: white;
     align-self: center;
+    cursor: pointer;
 }
 
 #profile{
@@ -64,21 +67,13 @@ body{
     margin-left: 10px;
 }
 
-#searchbox{
-    display:flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    padding:2px;
-    font-size: 1.2rem;
-}
 
 #menucontainer{
     background-color: white;
     width: 80%;
     height: 90%;
     margin-bottom: 2%;
-    overflow-y: scroll;
+    overflow:hidden;
 }
 
 .entry{
@@ -103,6 +98,7 @@ body{
     border-radius: 20px;
     min-width:100px;
     min-height: 30px;
+    cursor: pointer;
 }
 
 .styledownloadbutton{
@@ -112,4 +108,37 @@ body{
     border-radius: 20px;
     min-width:100px;
     min-height: 30px;
+    cursor: pointer;
+}
+
+.searchbutton, .closebutton{
+    width : 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: white;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.25 ease;
+    background-color: transparent;
+}
+
+.closebutton{
+    margin-left: 5px;
+    color:rgb(75, 75, 163);
+    z-index: -1;
+    background-color: transparent;
+}
+
+.active .searchbar{
+    width: 250px;
+}
+
+.active .searchbutton{
+    transform: translate(180px,2px) scale();
+    background-color: transparent;
+}
+
+.active .closebutton{
+    z-index: 0;
+    transform: translate(35px,-2px);
 }

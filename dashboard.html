@@ -1,84 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styleDashboard.css">
-    <script src="https://kit.fontawesome.com/1a9bd7d779.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="main">
-        <div id="searchandprofile">
-            <div id="searchbox">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchbar" placeholder="Search">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="styleDashboard.css">
+        <script src="https://kit.fontawesome.com/1a9bd7d779.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="searchandprofile">
+                <div class="search " >
+                    <input type="text" class="searchbar" placeholder="Search">
+                    <button class="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="closebutton"><i class="fa-solid fa-2x fa-left-long"></i></button>
+                </div>
+                <div id="profile">
+                    <img src="profile.png" alt="Profile Picture" id="profilepic">
+                </div>
             </div>
-            <div id="profile">
-                <img src="profile.png" alt="Profile Picture" id="profilepic">
+            <h1>Recent Files</h1>
+            <div id="menucontainer">
+                <div class="entry">
+                    <p>Secret document.docx</p>
+                    <div class="buttoncontainer">
+                        <button class="styleremovebutton">Remove</button>
+                        <button class="styledownloadbutton">Download</button>
+                    </div>
+                </div>
+
+                <!-- ... more entries -->
+                <div class="entry">
+                    <p>Secret document.docx</p>
+                    <div class="buttoncontainer">
+                        <button class="styleremovebutton">Remove</button>
+                        <button class="styledownloadbutton">Download</button>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <p>Secret document.docx</p>
+                    <div class="buttoncontainer">
+                        <button class="styleremovebutton">Remove</button>
+                        <button class="styledownloadbutton">Download</button>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <p>Secret document.docx</p>
+                    <div class="buttoncontainer">
+                        <button class="styleremovebutton">Remove</button>
+                        <button class="styledownloadbutton">Download</button>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <p>Secret document.docx</p>
+                    <div class="buttoncontainer">
+                        <button class="styleremovebutton">Remove</button>
+                        <button class="styledownloadbutton">Download</button>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <p>Secret document.docx</p>
+                    <div class="buttoncontainer">
+                        <button class="styleremovebutton">Remove</button>
+                        <button class="styledownloadbutton">Download</button>
+                    </div>
+                </div>
+                <div class="entry">
+                    <p>Secret document.docx</p>
+                    <div class="buttoncontainer">
+                        <button class="styleremovebutton">Remove</button>
+                        <button class="styledownloadbutton">Download</button>
+                    </div>
+                </div>
+                <!-- end of entries -->
             </div>
         </div>
-        <h1>Recent Files</h1>
-        <div id="menucontainer">
-            <div class="entry">
-                <p>Secret document.docx</p>
-                <div class="buttoncontainer">
-                    <button class="styleremovebutton">Remove</button>
-                    <button class="styledownloadbutton">Download</button>
-                </div>
-            </div>
-
-             <!-- ... more entries -->
-            <div class="entry">
-                <p>Secret document.docx</p>
-                <div class="buttoncontainer">
-                    <button class="styleremovebutton">Remove</button>
-                    <button class="styledownloadbutton">Download</button>
-                </div>
-            </div>
-
-            <div class="entry">
-                <p>Secret document.docx</p>
-                <div class="buttoncontainer">
-                    <button class="styleremovebutton">Remove</button>
-                    <button class="styledownloadbutton">Download</button>
-                </div>
-            </div>
-
-            <div class="entry">
-                <p>Secret document.docx</p>
-                <div class="buttoncontainer">
-                    <button class="styleremovebutton">Remove</button>
-                    <button class="styledownloadbutton">Download</button>
-                </div>
-            </div>
-
-            <div class="entry">
-                <p>Secret document.docx</p>
-                <div class="buttoncontainer">
-                    <button class="styleremovebutton">Remove</button>
-                    <button class="styledownloadbutton">Download</button>
-                </div>
-            </div>
-
-            <div class="entry">
-                <p>Secret document.docx</p>
-                <div class="buttoncontainer">
-                    <button class="styleremovebutton">Remove</button>
-                    <button class="styledownloadbutton">Download</button>
-                </div>
-            </div>
-
-            <div class="entry">
-                <p>Secret document.docx</p>
-                <div class="buttoncontainer">
-                    <button class="styleremovebutton">Remove</button>
-                    <button class="styledownloadbutton">Download</button>
-                </div>
-            </div>
-
-            <!-- end of entries -->
-        </div>
-    </div>
-</body>
+        <script src="scriptDashboardsearchbtn.js"></script>
+        <script src="scriptDashscroll.js"></script>
+    </body>
 </html>

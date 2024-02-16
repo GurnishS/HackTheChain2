@@ -7,39 +7,39 @@
     <link rel="stylesheet" href="styleForm.css">
 </head>
 <body>
-    <div id="main">
-        <h1>FIR Form</h1>
+    <form id="main">
+        <h1>First Information Report</h1>
         <div id="informerdetails" class="outerdetailsbox">
             <h2>Informer Details</h2>
             <div class="innerdetailsbox">
                 <div class="detailsbox">
                     <label for="informername">Name</label>
                     <div id="fullname">
-                        <input type="text" id="informername" placeholder="First Name" class="inputclass">
+                        <input type="text" id="informername" placeholder="First Name" class="inputclass" required>
                         <input type="text" id="informerlastname" placeholder="Last Name" class="inputclass">
                     </div>
                 </div>
                 <div class="detailsbox">
                     <label for="informerphone">Phone</label>
-                    <input type="text" id="informerphone" placeholder="Phone" class="inputclass">                
+                    <input type="text" id="informerphone" placeholder="Phone" class="inputclass" required>                
                 </div>
                 <div class="detailsbox">
                     <label for="informeremail">Email</label>
-                    <input type="text" id="informeremail" placeholder="Email" class="inputclass">                
+                    <input type="text" id="informeremail" placeholder="Email" class="inputclass" required>                
                 </div>
                 <div class="detailsbox">
                     <label for="informeraddress">Address</label>
-                    <input type="text" id="informeraddress" placeholder="Address" class="inputclass">                
+                    <input type="text" id="informeraddress" placeholder="Address" class="inputclass" required>                
                 </div>
                 <div class="detailsbox">
                     <label for="informeradhaar">Adhaar Number</label>
-                    <input type="text" id="informeradhaar" placeholder="Adhaar Number" class="inputclass">                
+                    <input type="text" id="informeradhaar" placeholder="Adhaar Number" class="inputclass" required>                
                 </div>
             </div>
         </div>
 
         
-        <div id="checkbox">
+        <div class="checkbox">
             <input type="checkbox" id="suspectcheck" class="inputclass">
             <label for="suspectcheck">Do you have a suspect</label>
         </div>
@@ -64,7 +64,75 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <div id="crimedetails" class="outerdetailsbox">
+            <h2>Crime Details</h2>
+            <div class="innerdetailsbox">
+                <div class="detailsbox">
+                    <label for="crimetype">Type of Crime</label>
+                    <input type="text" id="crimetype" placeholder="Type of Crime" class="inputclass" required>                
+                </div>
+                <div class="detailsbox">
+                    <label for="crimedate">Date of Crime</label>
+                    <input type="date" id="crimedate" class="inputclass" required>                
+                </div>
+                <div class="detailsbox">
+                    <label for="crimetime">Time of Crime</label>
+                    <input type="time" id="crimetime" class="inputclass" required>                
+                </div>
+                <div class="detailsbox">
+                    <label for="crimeplace">Place of Crime</label>
+                    <input type="text" id="crimeplace" placeholder="Place of Crime" class="inputclass" required>                
+                </div>
+                <div class="detailsbox">
+                    <label for="crimedescription">Description</label>
+                    <input type="text" id="crimedescription" placeholder="Description" class="inputclass" required>                
+                </div>
+                <div class="detailsbox">
+                    <label for="Section">Section</label>
+                    <input type="text" id="Section" placeholder="Section" class="inputclass" required>
+                </div>
+                <div class="detailsbox">
+                    <label for="distance">Distance from Police station</label>
+                    <input type="text" id="distance" placeholder="Distance from Police station" class="inputclass" required>
+                </div>
+                <div class="detailsbox">
+                    <label for="Others">Others</label>
+                    <input type="text" id="Others" placeholder="Other Details" class="inputclass">
+                </div>
+            </div>
+
+        <div id="stationdetails" class="outerdetailsbox">
+            <h2>Station Details</h2>
+            <div class="innerdetailsbox">
+                <div class="detailsbox">
+                    <label for="stationname">Name</label>
+                    <input type="text" id="stationname" placeholder="Station Name" class="inputclass" required>
+                </div>
+                <div class="detailsbox">
+                    <label for="stationnumber">Station Number</label>
+                    <input type="text" id="stationnumber" placeholder="Station Number" class="inputclass" required>
+                </div>
+                <div class="detailsbox">
+                    <label for="stationaddress">Address</label>
+                    <input type="text" id="stationaddress" placeholder="Station Address" class="inputclass" required>
+                </div>
+                <div class="detailsbox">
+                    <label for="stationphone">Phone</label>
+                    <input type="text" id="stationphone" placeholder="Station Phone" class="inputclass" required>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="checkbox">
+            <input type="checkbox" id="declaration" class="inputclass">
+            <label for="declaration">I hereby declare that all the information provided above is correct to best of my knowledge. </label>
+        </div>
+            
+        <div class="submitbutton">
+            <button id="submit" disabled>Submit</button>
+        </div>
+    </form>
     <script src="scriptForm.js"></script>
 </body>
 </html>

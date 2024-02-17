@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right,#84ffc9,#aab2ff, #40c9ff, #eca0ff);
+}
+
+
+/* Navigation bar */
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(183, 212, 214);
+    height: 70px;
+    justify-content: space-between;
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin: 5%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.searchbar{
+    width: 100%;
+    min-width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+i{
+    background: white;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.profile{
+    margin: 5%;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border:2px solid white;
+    color:white;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(10, 71, 10);
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+}
+.profile:hover{
+    background:rgb(5, 52, 5);
+
+}
+
+/* Container zone */
+
+.menucontainer{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    margin: 5%;
+    overflow-y: scroll;
+}
+
+.entry{
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding:5px 10px;
+}
+
+.buttoncontainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.styledetailsbutton{
+    background-color: rgb(45, 39, 39);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    min-width:100px;
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.styledetailsbutton:hover{
+    background-color: rgb(5, 5, 8);
+}
+
+.styledownloadbutton{
+    background-color: rgb(46, 46, 135);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    min-width:100px;
+    min-height: 30px;
+    cursor: pointer;
+}
+.styledownloadbutton:hover{
+    background-color: rgb(16, 16, 78);
+}

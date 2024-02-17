@@ -29,10 +29,13 @@ body{
     align-items: center;
 }
 
+
 #main h1{
     font-family: "Poppins-Bold", sans-serif;
     margin:0;
 }
+
+/* Search CSS */
 
 #searchandprofile{
     display: flex;
@@ -51,6 +54,17 @@ body{
     outline: none;
 }
 
+#searchbox{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding:2px;
+    font-size: 1.2rem;
+}
+
+
+/* Profile Tag */
 
 #profile{
     display: flex;
@@ -65,6 +79,30 @@ body{
     width:40px;
     height: 40px;
     cursor: pointer;
+}
+
+#profile:hover{
+    border-color: rgb(174, 230, 230);
+}
+
+
+/* Dropdown menu */
+#dropdown{
+    /* display: none; */
+    position: fixed;
+    width:300px;
+    height: 300px;
+    background: grey;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dropdown>p{
+    margin-top:0;
 }
 
 #profilelarge{
@@ -82,24 +120,8 @@ body{
     height: 60px;
 }
 
-#dropdown{
-    /* display: none; */
-    position: fixed;
-    width:300px;
-    height: 300px;
-    background:linear-gradient(#654ea2,#353335);
-    border-radius: 10px;
-    padding: 10px;
-    z-index: 1;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-#dropdown>p{
-    margin-top:0;
-}
-
+/* Border style */
 #borderforname{
     border-bottom: 1px solid rgb(255, 255, 255);
     width:100%;
@@ -124,15 +146,8 @@ body{
 
 }
 
-#searchbox{
-    display:flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    padding:2px;
-    font-size: 1.2rem;
-}
 
+/* Container */
 #menucontainer{
     background-color: white;
     width: 80%;
@@ -150,6 +165,40 @@ body{
     padding:5px 10px;
 }
 
+.buttoncontainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.styledetailsbutton{
+    background-color: rgb(45, 39, 39);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    min-width:100px;
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.styledetailsbutton:hover{
+    background-color: rgb(5, 5, 8);
+}
+
+.styledownloadbutton{
+    background-color: rgb(46, 46, 135);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    min-width:100px;
+    min-height: 30px;
+    cursor: pointer;
+}
+.styledownloadbutton:hover{
+    background-color: rgb(16, 16, 78);
+}
+
+/* Adding new items */
 #newandrecent{
     display:flex;
     align-items: center;
@@ -177,49 +226,24 @@ body{
     background-color: #308c36;
 }
 
-.buttoncontainer{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-.styledetailsbutton{
-    background-color: rgb(45, 39, 39);
-    color: white;
-    border: none;
-    border-radius: 20px;
-    min-width:100px;
-    min-height: 30px;
-    cursor: pointer;
-}
 
-.styledownloadbutton{
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    min-width:100px;
-    min-height: 30px;
-    cursor: pointer;
-}
 
-.sub-menu-link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: azure;
-    margin-top: 5px;
-}
-
+/* Scroll bar */
 ::-webkit-scrollbar{
     width: 8px;
 }
 ::-webkit-scrollbar-track{
     background: #d1e5ff;
-    
-    
 }
 ::-webkit-scrollbar-thumb{
     background:linear-gradient(#642bff,#ff22e6);
     border-radius: 10px;
+    transition: background-color 0.3s;
 }
+
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(#ff22e6,#642bff);
+    transition: 0.5s;
+}
+

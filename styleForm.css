@@ -34,6 +34,7 @@ body{
     font-weight: 600;
 }
 
+/* Detail input */
 .inputclass{
     width:250px;
     height: 40px;
@@ -61,38 +62,13 @@ body{
     flex-wrap: wrap;
 }
 
-.checkbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    text-align: center;
-}
 
-.checkbox input{
-    width: 20px;
-    height: 20px;
-    transform: translateY(-0.5px);
-    margin-right: 5px;
-}
 
 #suspectdetails{
     display:none;
 }
 
-::-webkit-scrollbar{
-    width: 8px;
-}
-::-webkit-scrollbar-track{
-    background: #d1e5ff;
-    
-    
-}
-::-webkit-scrollbar-thumb{
-    background:linear-gradient(#642bff,#ff22e6);
-    border-radius: 10px;
-}
-
+/* Submit button */
 .submitbutton{
     display: flex;
     justify-content: center;
@@ -110,4 +86,36 @@ body{
 
 #submit:disabled{
     background-color: grey;
+}
+
+
+/* CheckBoxes */
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.checkbox input{
+    width: 20px;
+    height: 20px;
+    transform: translateY(-0.5px);
+    margin-right: 5px;
+}
+
+
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+    
+    
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#642bff,#ff22e6);
+    border-radius: 10px;
 }

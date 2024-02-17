@@ -23,7 +23,7 @@ window.addEventListener('resize', () => {
 
 profile.addEventListener('click',()=>{
     if(dropdown.style.display==='none'){
-        dropdown.style.display='block';
+        dropdown.style.display='flex';
     }
     else{
         dropdown.style.display='none';

@@ -3,9 +3,6 @@
 
 
 
-
-## Problem:
-India’s digitalization has led to a shift from traditional manual systems to a centralized online process for registering complaints, but the security of the First Information Report (FIR) system remains a critical concern. This project proposes a solution that leverages blockchain technology to enhance the security of FIRs, addressing the need for a more secure, traceable, and chronological record-keeping system.
 ## Problem:
 India’s digitalization has led to a shift from traditional manual systems to a centralized online process for registering complaints, but the security of the First Information Report (FIR) system remains a critical concern. This project proposes a solution that leverages blockchain technology to enhance the security of FIRs, addressing the need for a more secure, traceable, and chronological record-keeping system.
 ## How it goes:

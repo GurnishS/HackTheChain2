@@ -1,120 +1,122 @@
-*{
-    border:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins-Regular", sans-serif;
 }
 
-body{
-    background: linear-gradient(to right,#84ffc9,#aab2ff, #40c9ff, #eca0ff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-image: url(WhatsApp\ Image\ 2024-02-18\ at\ 03.24.00_3f1ffe35.jpg);
+  /* background-color: rgb(14, 99, 99); */
+}
+h2 {
+  color: aliceblue;
 }
 
-#main{
-    width:90vw;
-    max-width: 500px;
-    min-height: 500px;
-    max-height: 700px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    font-family: "Popins-Regular", sans-serif;
-    align-items: center;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10%;
+  margin: 10px;
+  height: 400px;
+  width: 350px;
+  background: transparent;
+  border-radius: 12px;
+  border: 2px solid rgb(183, 82, 110);
 }
 
-#main h1{
-    margin-top: 10%;
-    margin-bottom: 5%;
-    color: #0a0403;
-    font-size: 3rem;
-    font-weight: 600;
+.main-form form{
+  backdrop-filter: blur(40px);
 }
 
-i{
-    transform: translateY(-1px);
+.user-id {
+  color: aliceblue;
+}
+
+.user-id-input {
+  position: relative;
+  width: 250px;
+  background: transparent;
+  height: 25px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  font-size: 1.2em;
+  border-bottom: 2px solid #ccc;
+  border-radius: 10px;
+  transition: border-bottom-color 0.3s;
+  color: #ccc;
+  text-align: center;
+}
+
+.password-input {
+  position: relative;
+  width: 250px;
+  background: transparent;
+  height: 25px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.5s;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border-bottom: 2px solid #ccc; 
+  transition: border-bottom-color 0.3s;
+  color: #ccc;
+  text-align:center;
+}
+
+.password-input:focus {
+  border-bottom-color: rgb(183, 82, 110);
+  transition: 0.9s;
+}
+.user-id-input:focus{
+  border-bottom-color: rgb(183, 82, 110);
+  transition: 0.9s;
 }
 
 
-
-.inputbox{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-}
-#inputwforgot{
-    display:flex;
-    flex-direction: column;
-    align-items: right;
+.password {
+  color: aliceblue;
 }
 
-
-
-.inputwicon{
-    display: inline;
-    background-color: white;
-    border-radius: 10px;
-    padding-left:5px;
-    border-bottom:2px solid #0a0403;
+button{
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  background: rgb(45, 122, 122);
+  color: #fff;
+  transition: 0.3s;
 }
 
-.inputclass{
-    font-size: 1.2em;
-    height: 45px;
-    border-radius: 10px;
-    outline: none;
+button:hover{
+  transition: 0.9s;
+  background: rgb(14, 14, 97);
+  cursor: pointer;
 }
 
-
-
-#buttonholder{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top:10%;
-    margin-bottom:10%;
-
+.rem-forgot label{
+  color: #fff;
+  margin-right: 140px;
+}
+h4{
+  color: white;
+}
+.register a{
+  color: #fff;
+  transition: color 0.3s;
 }
 
-/* Login Button */
-.loginbutton{
-    border-radius: 10px;
-    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    width:200px;
-    height: 30px;
-    font-size: 1.3rem;
-    color:white;
+.register a:hover{
+  color: red;
+  transition: color 0.8s;
 }
 
-.loginbutton:hover{
-    background: linear-gradient(to right top, #a8eb12, #00bf72, #008793, #004d7a, #051937);
-    cursor: pointer;
-}
-
-/* SignUp button */
-
-.signupbutton{
-    border-radius: 10px;
-    height: 30px;
-    width:150px;
-    font-size: 1rem;
-    color:white;
-    background: linear-gradient(to right top, #878789, #4b5357, #0f1314, #3b5f4d);
-
-}
-
-.signupbutton:hover{
-    background: linear-gradient(to right top, #3b5f4d, #0f1314, #4b5357, #878789);
-    cursor: pointer;
-}
-
-/* Only for password div */
-#inputwforgot a{
-    align-self: flex-end;
-    margin-right: 10px;
-    margin-top: 10px;
- }
